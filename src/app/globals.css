@@ -1,0 +1,69 @@
+/* ============================================
+   SFL CHEER MANAGER - Global Styles
+   Sunflower Land inspired theme
+   ============================================ */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background-color: #87a96b; /* light meadow green */
+  color: #3d2914;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Sunflower Land palette */
+:root {
+  --color-cream: #faf3e0;
+  --color-wood: #8b6914;
+  --color-wood-light: #c9a227;
+  --color-green: #81a551;
+  --color-green-dark: #5a7a3a;
+  --color-sky: #87ceeb;
+  --color-sunflower: #ffd700;
+  --color-earth: #e8d5b7;
+  --color-text: #3d2914;
+  --color-text-light: #5a3a0a;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-earth);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-wood-light);
+  border-radius: 3px;
+}
+
+/* Selection */
+::selection {
+  background-color: var(--color-green);
+  color: white;
+}
+
+/* Animations */
+@keyframes popIn {
+  from { transform: scale(0.9); opacity: 0; }
+  to   { transform: scale(1);   opacity: 1; }
+}
+
+@keyframes fadeUp {
+  from { transform: translateY(10px); opacity: 0; }
+  to   { transform: translateY(0);    opacity: 1; }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50%       { transform: scale(1.05); }
+}
+
+.animate-pop   { animation: popIn  0.3s ease-out; }
+.animate-fade  { animation: fadeUp 0.4s ease-out; }
+.animate-pulse { animation: pulse 2s infinite; }
