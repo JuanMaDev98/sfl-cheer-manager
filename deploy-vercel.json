@@ -1,23 +1,20 @@
 {
   "name": "sfl-cheer-manager",
   "framework": "nextjs",
-  "buildCommand": "npm run build",
-  "outputDirectory": ".next",
   "gitSource": {
     "type": "github",
     "repo": "JuanMaDev98/sfl-cheer-manager",
     "ref": "main",
     "repoId": "1202069199"
   },
+  "projectSettings": {
+    "framework": "nextjs",
+    "buildCommand": "npm run build",
+    "outputDirectory": ".next",
+    "rootDirectory": ""
+  },
   "env": {
     "NEXT_PUBLIC_SUPABASE_URL": "https://mtnuwkemkaxslmtbycyd.supabase.co",
     "NEXT_PUBLIC_SUPABASE_ANON_KEY": "sb_publishable_pJtuJ3wYuf8Yv1Ky9RvLsg_NMyJYsmV"
-  },
-  "projectSettings": {
-    "framework": "nextjs",
-    "devCommand": "next dev",
-    "installCommand": "npm install",
-    "buildCommand": "npm run build",
-    "outputDirectory": ".next"
   }
 }
